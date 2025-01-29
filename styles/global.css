@@ -16,7 +16,7 @@
   --gray-100: #F4F1F2;
   --white: #FFFFFF;
 
-  --ff-oxygen: "oxygen", sans serif;
+  font-family: "oxygen", sans-serif;
   --fw-regular: 400;
   --fw-bold: 700;
 
