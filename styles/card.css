@@ -1,0 +1,14 @@
+#card{
+  display:grid;
+  gap: 1rem;
+  width: 35.5rem;
+  #stamp{
+    height: 20.8125rem;
+    
+  }
+
+  #progress{
+    height: 7.3125rem;
+
+  }
+}

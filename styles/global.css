@@ -29,18 +29,25 @@
 
 html{
   line-height: 140%;
+  color: var(--gray-500);
 }
 
 body{
   background-color: var(--gray-200);
+  
 }
 
-header{
+#content{
   display: flex;
   justify-content: center;
   align-items: center;
-  img{
-    margin-top: 4rem;
-    height: 3.5rem;
-  }
+  margin: 4rem auto 10rem auto;
+  width: 57rem;
+  gap: 1.5rem;
+}
+
+.cards{
+  border-radius: 16px;
+  background-color: var(--gray-100);
+  border: 1px solid var(--gray-300);
 }
