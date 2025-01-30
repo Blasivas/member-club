@@ -4,7 +4,60 @@
   width: 35.5rem;
   #stamp{
     height: 20.8125rem;
-    
+    display: grid;
+    position: relative;
+    color: var(--gray-500);
+    .head{
+      display: grid;
+      gap: .25rem;
+      height: 2.5625rem;
+      width: 19.125rem;
+      margin: 2.25rem 14.375rem 2rem 2rem;
+      strong{
+        font-weight: var(--fw-bold);
+        font-size: var(--text-xs);
+      }
+      span{
+        font-size: var(--text-sm);
+      }
+    }
+
+    .tag{
+      position: absolute;
+      right: 2rem;
+      top: 2rem;
+      height: 2rem;
+      width: 9.3125rem;
+      background-color: var(--gray-300);
+      border-radius: 99px;
+      padding: 3px;
+      text-align: center;
+      font-weight: var(--fw-bold);
+      font-size: var(--text-sm);
+    }
+
+    .slots{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+      gap: 1rem;
+      margin: 0 2rem 2rem 2rem;
+      .item{
+        background-color: var(--gray-200);
+        width: 5.5rem;
+        height: 5.5rem;
+        border-radius: 20px;
+        display: flex;
+        img{
+          /* height: 2.5rem; */
+          width: 2.5rem;
+          margin: auto;
+        }
+
+      }
+      .free{
+
+      }
+    }
   }
 
   #progress{
