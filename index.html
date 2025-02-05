@@ -15,7 +15,7 @@
 
   <form method="get">
     <div class="input">
-      <input id="card-id" name="card-id" type="text" maxlength="12" placeholder="ID do cartão">
+      <input id="card-id" name="card-id" type="text" maxlength="15" placeholder="ID do cartão" oninput="formatarNumero()">
       <button>
         <img src="src/assets/Arrow.svg" alt="Seta">
       </button>
@@ -88,6 +88,6 @@
       </div>
     </div>
   </div>
-
+  <script src="src/modules/input.js"></script>
 </body>
 </html>
