@@ -1,8 +1,12 @@
 import {apiConfig} from "./api-config.js"
+import {userCard} from "../services/user-card.js"
+import {pageClear} from "../services/page-clear.js"
 
 export async function clientLoad(clientId) {
   const response = await fetch(`${apiConfig.baseUrl}/clients`);
   const data = await response.json();
-  let search = data.find(client => client.id === clientId);
-  console.log(search.name);
+  let client = data.find(client => client.id === clientId);
+  console.log(client.name);
+  pageClear()
+  userCard(client);
 }

@@ -12,6 +12,5 @@ cardId.oninput = () => {
 form.onsubmit = async (event) => {
   event.preventDefault();
   const finalId = cardId.value
-  console.log(finalId)
   clientLoad(finalId)
 }
