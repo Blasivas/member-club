@@ -1,5 +1,4 @@
 import {apiConfig} from "./api-config.js"
-// import {clients} from "../../server.json"
 
 export async function clientLoad(clientId) {
   const response = await fetch(`${apiConfig.baseUrl}/clients`);
