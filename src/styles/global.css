@@ -55,3 +55,15 @@ body{
   background-color: var(--gray-100);
   border: 1px solid var(--gray-300);
 }
+
+  ::-webkit-scrollbar {
+    width: .375rem;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--gray-100);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--gray-300);
+  }

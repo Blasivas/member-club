@@ -56,6 +56,11 @@
         font-weight: var(--fw-bold);
       }
     }
+    
+    #list{
+      height: 17rem;
+      overflow-y:scroll;
+    }
 
     .cut{
       list-style: none;
@@ -81,7 +86,5 @@
         }
       }
     }
-  
   }
-  
 }
