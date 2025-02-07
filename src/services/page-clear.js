@@ -8,4 +8,13 @@ export function pageClear() {
   const ulList = document.getElementById('list')
   ulList.innerHTML = "";
 
+  const spanTag = document.getElementById('tag')
+  spanTag.textContent = ("ID: ")
+
+  const divsItem = document.querySelectorAll('#slots .item')
+
+  for (let i=0; i<9; i++) {
+    const divItem = divsItem[i]
+    divItem.innerHTML=''
+  }
 }

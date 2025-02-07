@@ -1,6 +1,4 @@
-export function userHistory(client) {
-  const quant = client.loyaltyCard.totalCuts
-  
+export function userHistory(client, quant) {
   const divHead = document.getElementById('history-head')
 
   const spanHead1 = document.createElement('span')
@@ -14,7 +12,7 @@ export function userHistory(client) {
 
   const ul = document.getElementById('list')
 
-  for ( let i=0; i<quant; i++) {
+  for (let i=0; i<quant; i++) {
     const li = document.createElement('li')
     li.classList.add('cut')
 
@@ -27,8 +25,8 @@ export function userHistory(client) {
     const spanLi = document.createElement('span')
     spanLi.textContent = client.appointmentHistory[i].time
 
-    const imgLi = document.createElement(`img`)
-    imgLi.setAttribute("src", `src/assets/SealCheck.svg`)
+    const imgLi = document.createElement('img')
+    imgLi.setAttribute("src", 'src/assets/SealCheck.svg')
 
     divLi.appendChild(strongLi)
     divLi.appendChild(spanLi)
