@@ -68,7 +68,7 @@
       width: 25rem;
       height: 3.9375rem;
       gap: .75rem;
-      .text{
+      #text{
         strong{
           color: var(--gray-600);
           font-size: var(--title-md);
@@ -79,19 +79,19 @@
         }
 
       }
-      .linear{
+      #linear{
         display: flex;
         justify-content: right;
         gap: .75rem;
         position: relative;
         margin-top: .75rem;
-        .bar{
+        #bar{
           position: absolute;
           top: 7px;
           left: 0px;
           z-index: 1;
           height: .5rem;
-          width: 15rem;
+          width: .25rem;
           /* width: 21.9375rem; */
           background: linear-gradient(90deg,
           #2DAA6E 0%,
@@ -105,7 +105,7 @@
           top: 7px;
           left: 0px;
           height: .5rem;
-          width: 21.9375rem;
+          width: 22rem;
           background-color: var(--gray-300);
           border-radius: 100px;
           z-index: 0;

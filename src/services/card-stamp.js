@@ -3,7 +3,6 @@ export function cardStamp(client, quant){
   spanTag.textContent = (`ID: ${client.id}`)
 
   for(let i=0; i<quant; i++) {
-    console.log(i)
 
    const divsItem = document.querySelectorAll('#slots .item');
    const divItem = divsItem[i]

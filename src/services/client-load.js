@@ -4,6 +4,7 @@ import {pageClear} from "../services/page-clear.js"
 import {userCard} from "../services/user-card.js"
 import {userHistory} from "../services/user-history.js"
 import {cardStamp} from "../services/card-stamp.js"
+import {cardProgress} from "../services/card-progress.js"
 
 
 export async function clientLoad(clientId) {
@@ -15,4 +16,5 @@ export async function clientLoad(clientId) {
   userCard(client)
   userHistory(client, quant)
   cardStamp(client, quant)
+  cardProgress(client, quant)
 }

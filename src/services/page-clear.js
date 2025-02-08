@@ -17,4 +17,15 @@ export function pageClear() {
     const divItem = divsItem[i]
     divItem.innerHTML=''
   }
+
+  const divText = document.getElementById('text')
+  divText.innerHTML = ''
+  const divLinear = document.getElementById('linear')
+  const spanLinear = divLinear.querySelector('.remove')
+  if (spanLinear) {
+    spanLinear.remove();
+  }
+
+  const divBar = document.getElementById('bar')
+  divBar.style.width = `.25rem`
 }
