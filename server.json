@@ -14,7 +14,7 @@
       ],
       "loyaltyCard": {
         "totalCuts": 6,
-        "cutsNeeded": 9,
+        "cutsNeeded": 10,
         "cutsRemaining": 3
       }
     },
@@ -30,7 +30,7 @@
       ],
       "loyaltyCard": {
         "totalCuts": 4,
-        "cutsNeeded": 9,
+        "cutsNeeded": 10,
         "cutsRemaining": 5
       }
     },
@@ -46,7 +46,7 @@
       ],
       "loyaltyCard": {
         "totalCuts": 4,
-        "cutsNeeded": 9,
+        "cutsNeeded": 10,
         "cutsRemaining": 5
       }
     }

@@ -13,7 +13,7 @@ export function pageClear() {
 
   const divsItem = document.querySelectorAll('#slots .item')
 
-  for (let i=0; i<9; i++) {
+  for (let i=0; i<10; i++) {
     const divItem = divsItem[i]
     divItem.innerHTML=''
   }

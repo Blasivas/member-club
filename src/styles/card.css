@@ -51,7 +51,11 @@
           width: 2.5rem;
           margin: auto;
         }
-
+      }
+      .gift{
+        background-image: url(../assets/GiftSolid.png);
+        background-repeat: no-repeat;
+        background-position: center;
       }
     }
   }

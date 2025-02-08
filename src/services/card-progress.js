@@ -2,7 +2,7 @@ export function cardProgress(client, quant) {
   const divText = document.getElementById('text')
 
   const strongText = document.createElement('strong')
-  strongText.textContent = (9-quant)
+  strongText.textContent = (10-quant)
 
   const spanText = document.createElement('span')
   spanText.textContent = (' cortes restantes')
@@ -19,7 +19,7 @@ export function cardProgress(client, quant) {
   divLinear.appendChild(spanLinear)
 
   const divBar = document.getElementById('bar')
-  const largura = quant*2.44
+  const largura = quant*2.2
   divBar.style.width = `${largura}rem`
 
     

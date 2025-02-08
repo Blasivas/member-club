@@ -8,13 +8,22 @@ import {cardProgress} from "../services/card-progress.js"
 
 
 export async function clientLoad(clientId) {
-  const response = await fetch(`${apiConfig.baseUrl}/clients`)
-  const data = await response.json()
-  let client = data.find(client => client.id === clientId)
-  const quant = client.loyaltyCard.totalCuts
-  pageClear()
-  userCard(client)
-  userHistory(client, quant)
-  cardStamp(client, quant)
-  cardProgress(client, quant)
+  try {
+    const response = await fetch(`${apiConfig.baseUrl}/clients`)
+    const data = await response.json()
+    let client = data.find(client => client.id === clientId)
+    const quant = client.loyaltyCard.totalCuts  
+    pageClear()
+    userCard(client)
+    userHistory(client, quant)
+    cardStamp(client, quant)
+    cardProgress(client, quant)
+    if (quant==10){
+      alert('Parabéns! Seu próximo corte é gratuito!')
+    }
+  } catch (error) {
+    alert('ID digitado é invalido')
+    console.log(error)
+  }
+
 }

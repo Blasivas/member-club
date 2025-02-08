@@ -6,7 +6,7 @@ export function userCard(client){
 
   const imgPhoto = document.createElement('img')
   imgPhoto.classList.add('photo')
-  imgPhoto.setAttribute("src", `src/assets/avatar/${client.name}.svg`)
+  imgPhoto.setAttribute("src", `src/assets/avatar/${client.name}.png`)
   imgPhoto.setAttribute("alt", 'foto de perfil')
 
   const divInfo = document.createElement('div')
