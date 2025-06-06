@@ -88,3 +88,9 @@
     }
   }
 }
+
+@media (width<=80em) {
+  #profile{
+    margin-inline: auto;
+  }
+}

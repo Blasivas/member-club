@@ -18,9 +18,15 @@ export function cardProgress(client, quant) {
 
   divLinear.appendChild(spanLinear)
 
+  const windowWidth = window.innerWidth;
   const divBar = document.getElementById('bar')
-  const largura = quant*2.2
-  divBar.style.width = `${largura}rem`
+  let largura;
+  if (windowWidth >= 1250) {
+    largura = quant * 2.2;
+  } else {
+    largura = quant * 1.5;
+  }
+  
+  divBar.style.width = `${largura}rem`;
 
-    
 }

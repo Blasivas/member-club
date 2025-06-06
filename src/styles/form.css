@@ -49,3 +49,16 @@ form{
     }
   }
 }
+
+@media (width<=80em) {
+  form{
+    margin-inline: auto;
+    margin-top: 1rem;
+    div{
+      width: 20rem;
+      input{
+        width: 100%;
+      }
+    }
+  }
+}
